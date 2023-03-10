@@ -74,7 +74,6 @@ class LogInPageVC: UIViewController {
                 present(alert, animated: true)
             }else{
                 continueBtnTapped = true
-                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCountdown), userInfo: nil, repeats: true)
                 callAPIFunction()
             }
         }
@@ -144,6 +143,7 @@ extension LogInPageVC {
                 if result.status == true {
                     self.setupUI()
                     self.validateOTP = true
+                    self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCountdown), userInfo: nil, repeats: true)
                 }else{
                     self.view.makeToast(ConstantFile.checkPhoneNum, duration: 2.0, position: .bottom, style: self.style)
                     self.validateOTP = false
