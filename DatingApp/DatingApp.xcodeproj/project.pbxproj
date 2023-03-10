@@ -26,6 +26,11 @@
 		EBCD3AC229BB20830051250C /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD3AC129BB20830051250C /* ResponseModel.swift */; };
 		EBCD3AC529BB218B0051250C /* PhoneNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD3AC429BB218B0051250C /* PhoneNumberModel.swift */; };
 		EBCD3AC729BB31690051250C /* NoteScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD3AC629BB31690051250C /* NoteScreenVC.swift */; };
+		EBCD3AC929BB624B0051250C /* HomePageTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD3AC829BB624B0051250C /* HomePageTabBar.swift */; };
+		EBCD3ACE29BB6B000051250C /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBCD3ACD29BB6AFF0051250C /* Gilroy-Regular.ttf */; };
+		EBCD3AD329BB735D0051250C /* ProfileListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD3AD229BB735D0051250C /* ProfileListVC.swift */; };
+		EBCD3AD629BB76170051250C /* ProfileListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD3AD429BB76170051250C /* ProfileListCell.swift */; };
+		EBCD3AD729BB76170051250C /* ProfileListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCD3AD529BB76170051250C /* ProfileListCell.xib */; };
 		EBF4A26329B9A357005B8BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4A26229B9A357005B8BFB /* AppDelegate.swift */; };
 		EBF4A26529B9A357005B8BFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4A26429B9A357005B8BFB /* SceneDelegate.swift */; };
 		EBF4A26729B9A357005B8BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4A26629B9A357005B8BFB /* ViewController.swift */; };
@@ -80,6 +85,12 @@
 		EBCD3AC129BB20830051250C /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		EBCD3AC429BB218B0051250C /* PhoneNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberModel.swift; sourceTree = "<group>"; };
 		EBCD3AC629BB31690051250C /* NoteScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteScreenVC.swift; sourceTree = "<group>"; };
+		EBCD3AC829BB624B0051250C /* HomePageTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabBar.swift; sourceTree = "<group>"; };
+		EBCD3ACD29BB6AFF0051250C /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		EBCD3ACF29BB6D320051250C /* Gilroy-SemiBold - Copy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold - Copy.ttf"; sourceTree = "<group>"; };
+		EBCD3AD229BB735D0051250C /* ProfileListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListVC.swift; sourceTree = "<group>"; };
+		EBCD3AD429BB76170051250C /* ProfileListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListCell.swift; sourceTree = "<group>"; };
+		EBCD3AD529BB76170051250C /* ProfileListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileListCell.xib; sourceTree = "<group>"; };
 		EBF4A25F29B9A357005B8BFB /* DatingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF4A26229B9A357005B8BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF4A26429B9A357005B8BFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +163,8 @@
 				EBCD3A8929B9AE040051250C /* InitialPageVC.swift */,
 				EBCD3AA929BAE0760051250C /* LogInPageVC.swift */,
 				EBCD3AC629BB31690051250C /* NoteScreenVC.swift */,
+				EBCD3AC829BB624B0051250C /* HomePageTabBar.swift */,
+				EBCD3AD229BB735D0051250C /* ProfileListVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				EBCD3AC129BB20830051250C /* ResponseModel.swift */,
+				EBCD3AD429BB76170051250C /* ProfileListCell.swift */,
+				EBCD3AD529BB76170051250C /* ProfileListCell.xib */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -221,6 +236,8 @@
 		EBF4A25629B9A357005B8BFB = {
 			isa = PBXGroup;
 			children = (
+				EBCD3ACF29BB6D320051250C /* Gilroy-SemiBold - Copy.ttf */,
+				EBCD3ACD29BB6AFF0051250C /* Gilroy-Regular.ttf */,
 				EBCD3AAE29BAF10C0051250C /* Inter-Bold.ttf */,
 				EBCD3AAD29BAF10B0051250C /* Inter-Regular.ttf */,
 				EBF4A26129B9A357005B8BFB /* DatingApp */,
@@ -388,6 +405,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCD3ACE29BB6B000051250C /* Gilroy-Regular.ttf in Resources */,
+				EBCD3AD729BB76170051250C /* ProfileListCell.xib in Resources */,
 				EBCD3AAF29BAF10C0051250C /* Inter-Regular.ttf in Resources */,
 				EBCD3AB029BAF10C0051250C /* Inter-Bold.ttf in Resources */,
 				EBF4A26F29B9A358005B8BFB /* LaunchScreen.storyboard in Resources */,
@@ -522,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCD3A9329BA3EBB0051250C /* CustomFont.swift in Sources */,
+				EBCD3AC929BB624B0051250C /* HomePageTabBar.swift in Sources */,
 				EBCD3AB229BAF15C0051250C /* ConstantStingFile.swift in Sources */,
 				EBF4A26729B9A357005B8BFB /* ViewController.swift in Sources */,
 				EBCD3ABB29BB1CD60051250C /* ServicesManager.swift in Sources */,
@@ -534,6 +554,8 @@
 				EBCD3AAA29BAE0760051250C /* LogInPageVC.swift in Sources */,
 				EBF4A26329B9A357005B8BFB /* AppDelegate.swift in Sources */,
 				EBCD3AC729BB31690051250C /* NoteScreenVC.swift in Sources */,
+				EBCD3AD629BB76170051250C /* ProfileListCell.swift in Sources */,
+				EBCD3AD329BB735D0051250C /* ProfileListVC.swift in Sources */,
 				EBCD3A8D29B9AF040051250C /* ExtensionFiles.swift in Sources */,
 				EBCD3A8A29B9AE040051250C /* InitialPageVC.swift in Sources */,
 				EBF4A26529B9A357005B8BFB /* SceneDelegate.swift in Sources */,

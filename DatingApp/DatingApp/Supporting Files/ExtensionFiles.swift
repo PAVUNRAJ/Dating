@@ -67,12 +67,16 @@ extension UILabel {
     
     func setupNormalLbl(label:UILabel,txt: String){
         label.text =  txt
-        label.font =  UIFont.boldSystemFont(ofSize: 15)
+        label.textAlignment =  .left
+        label.textColor = .black
+        label.font = CustomFont.CustomFontInterBold(size: 18)
     }
     
     func setupItemLbl(label:UILabel,txt: String){
         label.text =  txt
-        label.font =  UIFont.boldSystemFont(ofSize: 13)
+        label.textAlignment =  .left
+        label.textColor = .white
+        label.font = CustomFont.CustomFontInterBold(size: 18)
     }
     
     func setupDescLbl(label:UILabel,txt: String){

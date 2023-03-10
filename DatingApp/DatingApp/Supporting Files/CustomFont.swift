@@ -21,4 +21,17 @@ class CustomFont: UIFont {
         }
         return font
     }
+    static func CustomFontGilroyRegular(size: CGFloat) -> UIFont {
+        guard let font = UIFont(name: "Gilroy-Regular", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
+    }
+    
+    static func CustomFontGilroySemiBold(size: CGFloat) -> UIFont {
+        guard let font = UIFont(name: "Gilroy-SemiBold", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
+    }
 }

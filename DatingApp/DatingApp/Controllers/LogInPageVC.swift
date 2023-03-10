@@ -42,7 +42,7 @@ class LogInPageVC: UIViewController {
         
         let returnKeyHandler = IQKeyboardReturnKeyHandler(controller: self)
         
-        returnKeyHandler.addTextFieldView(countryPicTxtField)
+      //  returnKeyHandler.addTextFieldView(countryPicTxtField)
         returnKeyHandler.addTextFieldView(mobileTxtField)
         returnKeyHandler.addTextFieldView(otpTxtField)
     }
@@ -165,19 +165,27 @@ extension LogInPageVC {
                 print("Success",result)
                 if result.token != "" {
                     print(result.token)
-                    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                    guard  let userDetail = storyBoard.instantiateViewController(withIdentifier: "NoteScreenVC") as? NoteScreenVC
-                    else{
-                        return
-                    }
-                    
-                    self.navigationController?.pushViewController(userDetail, animated: true)
+                    self.callTabBar()
+ 
                 }else{
                     self.view.makeToast(ConstantFile.checkotpTxt, duration: 2.0, position: .bottom, style: self.style)
                 }
             }
             
         })
+    }
+    
+    
+    func callTabBar(){
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let pgName = "HomePageTabBar"
+        if let tabbar = storyboard?.instantiateViewController(withIdentifier: pgName) as? HomePageTabBar {
+            tabbar.hidesBottomBarWhenPushed = false
+            tabbar.navigationController?.hidesBottomBarWhenPushed = false
+            tabbar.tabBarController?.tabBar.isHidden = false
+            tabbar.navigationController?.tabBarController?.tabBar.isHidden = false
+            self.navigationController?.pushViewController(tabbar, animated: true)
+        }
     }
 }
 

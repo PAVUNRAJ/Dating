@@ -25,17 +25,14 @@ class ResponseModel {
         }
     }
     
-//    static func ProductListAPIRequest(with param: ProductParam, controller : UIViewController, boolLoaderEnable : Bool, completion: @escaping Completion<ProductListResponse>) {
-//        print("Url getAllProductList is : ",ServicesEndPoint.getAllProductList)
-//        ServiceManger.postJSONRequest(ServicesEndPoint.getAllProductList, parameters: param, controller: controller, boolLoaderEnable: boolLoaderEnable, headerEnable: true,methodType: .get, jsonType: URLEncodedFormParameterEncoder.default) { responseData in
-//            completion(responseData)
-//        }
-//    }
     
-//    static func signUpSocialAPIRequest(with param: SignupSocialParam, controller : UIViewController, boolLoaderEnable : Bool, completion: @escaping Completion<SocialSignupResponseDetails>) {
-//        ServiceManger.postJSONRequest(ServerAPIURL.signup_social_api, parameters: param, controller: controller, boolLoaderEnable: boolLoaderEnable, headerEnable: false,methodType: .post, jsonType: JSONParameterEncoder.default) { responseData in
-//            completion(responseData)
-//        }
-//    }
+    
+    static func userListAPIRequest(with param: UserListRequest, controller : UIViewController, boolLoaderEnable : Bool, completion: @escaping Completion<UserListResponse>) {
+        print("Url userListEndPoint is : ",ServicesEndPoint.userListEndPoint)
+        ServiceManger.postJSONRequest(ServicesEndPoint.userListEndPoint, parameters: param, controller: controller, boolLoaderEnable: boolLoaderEnable, headerEnable: true,methodType: .get, jsonType: URLEncodedFormParameterEncoder.default) { responseData in
+            completion(responseData)
+        }
+    }
+
 }
 

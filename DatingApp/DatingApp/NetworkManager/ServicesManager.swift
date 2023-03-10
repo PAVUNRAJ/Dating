@@ -47,7 +47,7 @@ class ServiceManger {
         var headers: HTTPHeaders
        
         if headerEnable == true {
-            let bearerToken = "" //UserDefaultModule.shared.getApiAuthendicationToken()
+            let bearerToken = "32c7794d2e6a1f7316ef35aa1eb34541" 
         headers = ["Cookie": "","Authorization": bearerToken]
         } else
         {
